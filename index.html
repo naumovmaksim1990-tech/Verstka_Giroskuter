@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My-Giro</title>
+  <link rel="stylesheet" href="Css/styles.css">
+</head>
+<body>
+
+  <!-- Шапка: телефон, кнопка звонка, логотип, меню -->
+  <header class="site-header">
+    <!-- Верхняя полоса -->
+    <div class="top-bar">
+      <div class="container top-bar-inner">
+        <span class="phone">Мы всегда рады помочь по телефону +7 923 398 9013</span>
+        <!-- Кнопка открывает модальное окно (id для JS) -->
+        <a href="#" class="btn btn-callback" id="openModalBtn">Заказать звонок</a>
+      </div>
+    </div>
+
+    <!-- Основное меню -->
+    <div class="main-menu">
+      <div class="container main-menu-inner">
+        <div class="logo">My-Giro</div>
+        <nav class="nav">
+          <a href="#advantages">Преимущества</a>
+          <a href="#about">О нас</a>
+          <a href="#features">Особенности</a>
+          <a href="#catalog">Каталог</a>
+          <a href="#consultants">Команда</a>
+          <a href="#brands">Бренды</a>
+          <a href="#info">Полезное</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Первый экран (баннер) -->
+  <section class="hero">
+    <div class="hero-bg-wrapper">
+      <img class="hero-bg" src="Img/Rectangle 1.png" alt="Гироскутер">
+      <div class="hero-overlay"></div>
+    </div>
+    
+    <div class="hero-content">
+      <h1>My-Giro</h1>
+      <p>Крупнейший интернет-магазин гироскутеров, сигвеев и электросамокатов от известных мировых производителей</p>
+      <a href="#catalog" class="btn btn-hero">В каталог</a>
+    </div>
+  </section>
+
+  <!-- Наши преимущества -->
+  <section class="advantages" id="advantages">
+    <div class="container">
+      <div class="advantages-header">
+        <h2 class="section-title">Наши преимущества</h2>
+        <!-- Кнопки слайдера (визуально) -->
+        <div class="slider-buttons">
+          <button class="slider-btn prev" aria-label="Назад">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="slider-btn next" aria-label="Вперед">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="advantages-grid">
+        <div class="advantage-item">
+          <img src="Img/100-kachestvo.png" alt="Гарантия качества">
+          <p>Гарантия качества</p>
+        </div>
+        <div class="advantage-item">
+          <img src="Img/bistraya-dostavka.png" alt="Быстрая доставка">
+          <p>Быстрая доставка</p>
+        </div>
+        <div class="advantage-item">
+          <img src="Img/bolshoy-assortiment.png" alt="Большой ассортимент">
+          <p>Большой ассортимент</p>
+        </div>
+        <div class="advantage-item">
+          <img src="Img/consultant.png" alt="Онлайн-консультант">
+          <p>Онлайн-консультант</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- О нас -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <h2 class="section-title">О нас</h2>
+        
+        <div class="about-content">
+          <p class="about-text">
+            В нашем интернет-магазине представлен большой выбор гироскутеров, сигвеев и электросамокатов от известных мировых производителей.
+          </p>
+          <p class="about-text">
+            Все товары, представленные на нашем сайте, отобраны лучшими специалистами в этой области. Купить гироскутер, электросамокат или сигвей недорого вы можете в нашем интернет-магазине в любое время, когда вам удобно.
+            <span class="delivery-text">Доставка заказов осуществляется бесплатно, в любую точку России.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Оранжевая форма подписки -->
+    <div class="subscribe-wrapper">
+      <div class="container">
+        <div class="subscribe">
+          <div class="subscribe-text">
+            <p>Подпишитесь на нашу рассылку</p>
+            <p>и оставайтесь в курсе событий</p>
+          </div>
+          <form class="subscribe-form">
+            <input type="text" placeholder="Имя" required>
+            <input type="email" placeholder="Email" required>
+            <button type="submit">Подписаться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Особенности гироскутеров -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">Особенности гироскутеров</h2>
+      <div class="features-list">
+        <ul>
+          <li>— Трясёт</li>
+          <li>— Нет сиденья</li>
+          <li>— Только для одного</li>
+        </ul>
+        <ul>
+          <li>+ Исключительная компактность</li>
+          <li>+ Небольшой вес</li>
+          <li>+ Экономичность</li>
+        </ul>
+        <ul>
+          <li>+ Доступность</li>
+          <li>+ Манёвренность</li>
+          <li>+ Простой в освоении</li>
+        </ul>
+      </div>
+      <p class="features-note">
+        Этих преимуществ гироскутера вполне достаточно для того, чтобы в своей нише данный вид транспорта являлся одним из самых лучших вариантов!
+      </p>
+    </div>
+  </section>
+
+  <!-- Каталог -->
+  <section class="catalog" id="catalog">
+    <div class="container">
+      <div class="catalog-header">
+        <h2 class="section-title">Каталог</h2>
+        <!-- Фильтры: data-filter связывает кнопку с классом карточки -->
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">Все</button>
+          <button class="filter-btn" data-filter="gyroscooters">Гироскутеры</button>
+          <button class="filter-btn" data-filter="scooters">Электросамокаты</button>
+          <button class="filter-btn" data-filter="segways">Сигвеи</button>
+        </div>
+      </div>
+
+      <div class="catalog-grid">
+        <div class="product-card segways">
+          <span class="product-category">Сигвеи</span>
+          <img src="Img/2.jpg" alt="Товар 1">
+          <div class="product-info">
+            <h3>Xiaomi Ninebot mini Pro White (Белый)</h3>
+            <p class="price">31 480 р.</p>
+          </div>
+        </div>
+        <div class="product-card gyroscooters">
+          <span class="product-category">Гироскутеры</span>
+          <img src="Img/1234.jpg" alt="Товар 2">
+          <div class="product-info">
+            <h3>Xiaomi Ninebot mini Pro White (Белый)</h3>
+            <p class="price">31 480 р.</p>
+          </div>
+        </div>
+        <div class="product-card scooters">
+          <span class="product-category">Электросамокаты</span>
+          <img src="Img/3.jpg" alt="Товар 3">
+          <div class="product-info">
+            <h3>Xiaomi Ninebot mini Pro White (Белый)</h3>
+            <p class="price">31 480 р.</p>
+          </div>
+        </div>
+        <div class="product-card segways">
+          <span class="product-category">Сигвеи</span>
+          <img src="Img/1.jpg" alt="Товар 4">
+          <div class="product-info">
+            <h3>Xiaomi Ninebot mini Pro White (Белый)</h3>
+            <p class="price">31 480 р.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Наши консультанты -->
+  <section class="consultants" id="consultants">
+    <div class="container">
+      <h2 class="section-title">Наши консультанты</h2>
+      <div class="consultants-grid">
+        <div class="consultant-card">
+          <img src="Img/Иван Алексеев менеджер по продажам.jpg" alt="Иван Алексеев">
+          <div class="consultant-info">
+            <h3>Иван Алексеев</h3>
+            <p class="position">менеджер по продажам</p>
+            <a href="#" class="btn btn-small">Написать</a>
+          </div>
+        </div>
+        <div class="consultant-card">
+          <img src="Img/Галина Петрова менеджер по продажам.jpg" alt="Галина Петрова">
+          <div class="consultant-info">
+            <h3>Галина Петрова</h3>
+            <p class="position">менеджер по продажам</p>
+            <a href="#" class="btn btn-small">Написать</a>
+          </div>
+        </div>
+        <div class="consultant-card">
+          <img src="Img/Светлана Астахова менеджер по продажам.jpg" alt="Светлана Астахова">
+          <div class="consultant-info">
+            <h3>Светлана Астахова</h3>
+            <p class="position">менеджер по продажам</p>
+            <a href="#" class="btn btn-small">Написать</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Бренды -->
+  <section class="brands" id="brands">
+    <div class="brands-list">
+      <span>Xiaomi</span>
+      <span>Balance</span>
+      <span>Kugoo</span>
+      <span>Smart</span>
+      <span>Subor</span>
+      <span>Airwheel</span>
+      <span>Linbol</span>
+    </div>
+  </section>
+
+  <!-- Полезная информация -->
+  <section class="info" id="info">
+    <div class="container">
+      <h2 class="section-title">Полезная информация</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <img src="Img/1 2.png" alt="Инфо 1">
+          <p>Как выбрать гироскутер?<br>Советы перед покупкой</p>
+        </div>
+        <div class="info-card">
+          <img src="Img/2 3.png" alt="Инфо 2">
+          <p>Электросамокат.<br>Какой лучше и как выбрать?</p>
+        </div>
+        <div class="info-card">
+          <img src="Img/3 2.png" alt="Инфо 3">
+          <p>Как выбрать сигвей?<br>На что обратить внимание?</p>
+        </div>
+        <div class="info-card">
+          <img src="Img/4 1.png" alt="Инфо 4">
+          <p>Советы по выбору<br>гироскутера для ребёнка</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подвал: инфо-текст + 9 ссылок меню -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p>В нашем интернет-магазине представлен большой выбор гироскутеров, сигвеев и электросамокатов от известных мировых производителей.</p>
+          <p>Все товары, представленные на нашем сайте, отобраны лучшими специалистами в этой области.</p>
+          <p class="copyright">Copyright © 2020 My-Giro</p>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-column">
+            <h3>Компания My-Giro</h3>
+            <ul>
+              <li><a href="#about">О нас</a></li>
+              <li><a href="#advantages">Наши преимущества</a></li>
+              <li><a href="#consultants">Наши консультанты</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Покупателям</h3>
+            <ul>
+              <li><a href="#catalog">Каталог</a></li>
+              <li><a href="#brands">Бренды</a></li>
+              <li><a href="#info">Полезная информация</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Помощь</h3>
+            <ul>
+              <li><a href="#">Как оформить заказ</a></li>
+              <li><a href="#">Способы оплаты</a></li>
+              <li><a href="#">Обмен и возврат товара</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Модальное окно «Заказать звонок» -->
+  <div class="modal-overlay" id="callbackModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModalBtn" aria-label="Закрыть">&times;</button>
+      <h2 class="modal-title">Заказать звонок</h2>
+      <p class="modal-desc">Оставьте свои данные, и мы свяжемся с вами в ближайшее время!</p>
+      
+      <form class="callback-form">
+        <!-- Поле имени -->
+        <div class="form-group">
+          <label for="callName">Имя *</label>
+          <input type="text" id="callName" name="name" placeholder="Введите ваше имя" required>
+        </div>
+        <!-- Поле телефона -->
+        <div class="form-group">
+          <label for="callPhone">Номер телефона *</label>
+          <input type="tel" id="callPhone" name="phone" placeholder="+7 (___) ___-__-__" required>
+        </div>
+        <!-- Поле комментария -->
+        <div class="form-group">
+          <label for="callComment">Комментарий</label>
+          <textarea id="callComment" name="comment" rows="3" placeholder="Удобное время для звонка или вопрос"></textarea>
+        </div>
+        <!-- Кнопка отправки -->
+        <button type="submit" class="btn btn-submit">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Подключаем JS -->
+  <script src="script.js"></script>
+</body>
+</html>
